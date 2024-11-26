@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Resultados del Test Vocacional</title>
+    </head>
+    <body>
+        <h1>RESULTADOS DEL TEST</h1>
+
+        <p>Gracias por completar el test, {{ nombre }}. Aquí están tus resultados:</p>
+        <ul>
+            <li>Nombre: {{ nombre }}</li>
+            <li>Edad: {{ edad }}</li>
+            <li>Provincia: {{ provincia }}</li>
+            <li>Distrito: {{ distrito }}</li>
+        </ul>
+
+        <h3>Resultados de tu Test Vocacional:</h3>
+        <ul>
+            <li>Área Artística: {{ resultados['artistica'] }}</li>
+            <li>Área de Investigación: {{ resultados['investigacion'] }}</li>
+            <li>Área Realista: {{ resultados['realista'] }}</li>
+            <li>Área Social: {{ resultados['social'] }}</li>
+            <li>Área Empresarial: {{ resultados['empresarial'] }}</li>
+        </ul>
+        
+        <p>Basado en tus respuestas, podrías estar más inclinado hacia una de estas áreas:</p>
+    </body>
+</html>
